@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
 
 import AboutPage from '@/page/AboutPage'
 import SponsorPage from '@/page/SponsorPage'
 import StatementPage from '@/page/StatementPage'
 import SchedulePage from '@/page/SchedulePage'
 import JuryPage from '@/page/JuryPage'
+import LandingPage from '@/page/LandingPage'
 
 Vue.use(Router)
 
@@ -16,7 +16,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Hello
+      component: LandingPage
     },
     {
       path: '/about',
@@ -40,7 +40,7 @@ export default new Router({
     },
     {
       path: '*',
-      redirec: '/'
+      redirect: '/'
     }
   ]
 })
