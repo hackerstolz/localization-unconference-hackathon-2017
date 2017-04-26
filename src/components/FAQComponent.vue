@@ -8,12 +8,14 @@
             </v-card-row>
             <v-card-row>
                 <v-expansion-panel>
-                    <v-expansion-panel-content v-for="(faq,i) in faqs" :key="i">
-                        <div slot="header">{{faq.question}}</div>
-                        <v-card>
-                            <v-card-text class="grey lighten-3">{{faq.answer}}</v-card-text>
-                        </v-card>
-                    </v-expansion-panel-content>
+                    <template v-for="(faq,i) in faqs">
+                        <v-expansion-panel-content :key="i">
+                            <div slot="header">{{faq.question}}</div>
+                            <v-card>
+                                <v-card-text class="grey lighten-3">{{faq.answer}}</v-card-text>
+                            </v-card>
+                        </v-expansion-panel-content>
+                    </template>
                 </v-expansion-panel>
             </v-card-row>
         </v-card>

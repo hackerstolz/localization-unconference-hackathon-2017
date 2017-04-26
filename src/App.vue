@@ -1,25 +1,29 @@
 <template>
   <v-container id="app" fluid>
-    <v-toolbar class="green">
+    <header class="h-toolbar green">
       <v-row class="fill-parent">
-        <v-col xs1/>
+        <v-col xs1 style="height: 80px;">
+          <img :src="logo" alt="logo" />
+        </v-col>
         <template v-for="(section, index) in sections">
           <v-col xs2>
-            <router-link v-bind:to="section.link" class="btn btn--flat btn--raised remove-underline display-1">{{section.name}}</router-link>
+            <router-link v-bind:to="section.link" class="btn btn--flat btn--raised remove-underline display-2">{{section.name}}</router-link>
           </v-col>
         </template>
-        <v-col xs1/>
       </v-row>
-    </v-toolbar>
+    </header>
     <router-view class="mt-4" />
   </v-container>
 </template>
 
 <script>
+const LOGO = require('./assets/hackerstolz-icon.svg');
+
 export default {
   name: 'app',
   data() {
     return {
+      logo: LOGO,
       sections: [
         {
           name: 'About & FAQ',
@@ -55,11 +59,22 @@ export default {
   color: #2c3e50;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .fill-parent {
   width: 100%;
 }
 
+.h-toolbar {
+  height: 80px;
+  line-height: 80px;
+}
+
 .remove-underline {
+  text-align: center;
   text-decoration: none;
 }
 </style>
