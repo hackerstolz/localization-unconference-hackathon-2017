@@ -5,6 +5,7 @@ import Hello from '@/components/Hello'
 import AboutPage from '@/page/AboutPage'
 import SponsorPage from '@/page/SponsorPage'
 import StatementPage from '@/page/StatementPage'
+import SchedulePage from '@/page/SchedulePage'
 import JuryPage from '@/page/JuryPage'
 
 Vue.use(Router)
@@ -24,6 +25,10 @@ export default new Router({
     {
       path: '/jury',
       component: JuryPage
+    },
+    {
+      path: '/schedule',
+      component: SchedulePage
     },
     {
       path: '/sponsors',
