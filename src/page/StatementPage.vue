@@ -30,13 +30,25 @@
             </v-col>
             <v-col xs4 />
         </v-row>
+        <v-row class="mt-5 mb-5" />
+        <v-row class="mt-5 mb-5">
+            <v-col xs2 />
+            <v-col xs8>
+                <img :src="content_img" alt="WhyPicture" />
+            </v-col>
+            <v-col xs2 />
+        </v-row>
     </v-container>
 </template>
 
 <script>
+
+const CONTENT_IMG = require('../assets/statement.png');
+
 export default {
     data() {
         return {
+            content_img: CONTENT_IMG,
             page_header: [
                 'Why make a hackathon about',
                 ' languages?'
@@ -59,5 +71,8 @@ export default {
 </script>
 
 <style scoped>
-
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 </style>
