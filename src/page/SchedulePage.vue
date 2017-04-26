@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid>
+    <v-container fluid class="mt-4">
         <timeline />
     </v-container>
 </template>

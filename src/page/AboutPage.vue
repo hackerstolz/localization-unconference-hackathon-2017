@@ -1,18 +1,15 @@
 <template>
-    <v-container>
-        <about />
+    <v-container class="mt-4">
         <faq />
     </v-container>
 </template>
 
 <script>
 import FAQ from '@/components/FAQComponent'
-import About from '@/components/AboutComponent'
 
 export default {
     components: {
-        'faq': FAQ,
-        'about': About
+        'faq': FAQ
     },
     data() {
         return {}
