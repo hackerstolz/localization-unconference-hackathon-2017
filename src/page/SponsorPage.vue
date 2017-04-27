@@ -1,7 +1,7 @@
 <template>
     <v-container fluid class="ma-4">
         <v-card>
-            <v-card-row class="green darken-1">
+            <v-card-row class="grey darken-4">
                 <v-card-title>
                     <span class="white--text display-1 header">{{page_header}}</span>
                 </v-card-title>

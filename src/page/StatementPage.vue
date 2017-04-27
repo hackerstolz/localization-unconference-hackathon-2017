@@ -4,31 +4,31 @@
             <v-col xs2 />
             <v-col xs8>
                 <template v-for="(text, index) in page_header">
-                    <span v-if="(index % 2) === 1" class="display-1 accent--text" :id="index">{{text}}</span>
+                    <span v-if="(index % 2) === 1" class="display-1 red--text" :id="index">{{text}}</span>
                     <span v-else class="display-1" :id="index">{{text}}</span>
                 </template>
             </v-col>
             <v-col xs2 />
         </v-row>
         <v-row class="mb-2">
-            <v-col xs4 />
-            <v-col xs4>
+            <v-col xs2 />
+            <v-col xs8>
                 <template v-for="(text, index) in introduction">
-                    <span v-if="(index % 2) === 1" class="title accent--text" :id="index">{{text}}</span>
-                    <span v-else class="title" :id="index">{{text}}</span>
+                    <span v-if="(index % 2) === 1" class="title red--text justified-text" :id="index">{{text}}</span>
+                    <span v-else class="title justified-text" :id="index">{{text}}</span>
                 </template>
             </v-col>
-            <v-col xs4 />
+            <v-col xs2 />
         </v-row>
         <v-row>
-            <v-col xs4 />
-            <v-col xs4>
+            <v-col xs2 />
+            <v-col xs8>
                 <template v-for="(text, index) in content">
-                    <span v-if="(index % 2) === 1" class="title accent--text" :id="index">{{text}}</span>
-                    <span v-else class="title" :id="index">{{text}}</span>
+                    <span v-if="(index % 2) === 1" class="title red--text justified-text" :id="index">{{text}}</span>
+                    <span v-else class="title justified-text" :id="index">{{text}}</span>
                 </template>
             </v-col>
-            <v-col xs4 />
+            <v-col xs2 />
         </v-row>
         <v-row class="mt-5 mb-5" />
         <v-row class="mt-5 mb-5">
@@ -74,5 +74,9 @@ export default {
 img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.justified-text {
+    text-align: justify;
 }
 </style>

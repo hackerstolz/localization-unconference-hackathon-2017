@@ -3,7 +3,7 @@
     <v-container class="mt-4 mb-4">
         <v-card-row>
             <v-card-title>
-                <span class="green--text display-1 center-content">{{page_header}}</span>
+                <span class="darkgrey--text display-1 center-content">{{page_header}}</span>
             </v-card-title>
         </v-card-row>
         <v-card-row>
@@ -11,17 +11,17 @@
                 <template v-for="(speaker, index) in speakers">
                     <v-col xs4="xs4">
                         <v-card class="mt-2 mb-2">
-                            <v-card-row class="primary darken-3">
+                            <v-card-row class="blue-grey darken-4">
                                 <v-card-title>
                                     <p class="white--text center-content">{{speaker.name}}</p>
                                 </v-card-title>
                             </v-card-row>
-                            <v-card-row>
+                            <v-card-row class="grey lighten-3">
                                 <div class="center-content mt-3">
                                     <img :src="speaker.avatar" :alt="`${speaker.name} Portrait`" />
                                 </div>
                             </v-card-row>
-                            <v-card-text>
+                            <v-card-text class="grey lighten-3">
                                 {{speaker.short_summary}}
                             </v-card-text>
                         </v-card>

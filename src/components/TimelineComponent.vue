@@ -3,14 +3,14 @@
         <v-row style="width=100%">
             <v-col xs3/>
             <v-col xs6>
-                <span class="accent--text display-2">{{page_header}}</span>
+                <span class="darkgrey--text display-2">{{page_header}}</span>
             </v-col>
             <v-col xs3/>
         </v-row>
         <section id="cd-timeline" class="cd-container">
             <template v-for="(item, index) in timelineEvents">
                 <div v-if="item.type === TIME_LINE_TYPES.HEADER" class="cd-timeline-block mb-1">
-                    <div class="white pt-2 pb-2">
+                    <div class="grey lighten-2 pt-2 pb-2">
                         <span class="display-1 mb-2" style=" display: block;">{{item.day + ','}}</span>
                         <span class="display-1">{{item.date}}</span>
                     </div>
@@ -227,7 +227,7 @@ img {
     left: 18px;
     height: 100%;
     width: 4px;
-    background: #d7e4ed;
+    background: #000000;
 }
 
 @media only screen {
