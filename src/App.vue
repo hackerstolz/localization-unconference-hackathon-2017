@@ -1,13 +1,13 @@
 <template>
   <v-container id="app" fluid>
-    <header class="h-toolbar green">
+    <header class="h-toolbar grey darken-4">
       <v-row class="fill-parent">
         <v-col xs1 style="height: 80px;">
-          <img :src="logo" alt="logo" />
+          <img :src="logo" alt="logo" class="mt-1" />
         </v-col>
         <template v-for="(section, index) in sections">
           <v-col xs2>
-            <router-link v-bind:to="section.link" class="btn btn--flat btn--raised remove-underline display-2">{{section.name}}</router-link>
+            <router-link v-bind:to="section.link" class="btn btn--flat btn--raised remove-underline display-2 white--text">{{section.name}}</router-link>
           </v-col>
         </template>
       </v-row>
