@@ -6,9 +6,10 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "start": "node build/build.js"
+    "build": "node build/build.js"
   },
   "dependencies": {
+    "express": "https://registry.npmjs.org/express/-/express-4.15.2.tgz",
     "vue": "^2.2.6",
     "vue-router": "^2.5.2",
     "vuetify": "^0.11.1"
