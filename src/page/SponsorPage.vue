@@ -1,6 +1,6 @@
 <template>
     <v-container fluid class="ma-4">
-        <v-card>
+        <v-card class="grey lighten-3">
             <v-card-row class="grey darken-4">
                 <v-card-title>
                     <span class="white--text display-1 header">{{page_header}}</span>
@@ -10,7 +10,7 @@
                 <v-row class="fill-parent pl-2">
                     <template v-for="(header,index) in sponsor_headers">
                         <v-col xs4>
-                            <span class="accent--text headline">{{header}}</span>
+                            <span class="headline">{{header}}</span>
                         </v-col>
                     </template>
                 </v-row>
