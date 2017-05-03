@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import FAQ from '@/components/FAQComponent'
+import FAQ from '@/components/FandQComponent'
 
 export default {
     components: {
