@@ -15,22 +15,23 @@
                 <img :src="landing_image" class="mt-5" alt="Landing Image" />
             </v-col>
         </v-row>
-        <v-row class="mt-5 mb-5" />
-        <v-row class="mt-5 mb-5" />
-        <v-row class="mt-5">
-            <v-col xs1>
-                <span>{{powered_by}}</span>
-            </v-col>
-            <v-col xs5 style="background: cadetblue;" />
-            <v-col xs1>
-                <span>{{produced_by}}</span>
-            </v-col>
-            <v-col xs5>
-                <v-container>
-                    <img :src="hackerstolz_logo" alt="Hackerstolz" />
-                </v-container>
-            </v-col>
-        </v-row>
+    
+        <footer fluid class="mt-5 banner">
+            <v-row>
+                <v-col xs1>
+                    <span>{{powered_by}}</span>
+                </v-col>
+                <v-col xs5 style="background: cadetblue;" />
+                <v-col xs1>
+                    <span>{{produced_by}}</span>
+                </v-col>
+                <v-col xs5>
+                    <v-container>
+                        <img :src="hackerstolz_logo" alt="Hackerstolz" />
+                    </v-container>
+                </v-col>
+            </v-row>
+        </footer>
     </v-container>
 </template>
 
@@ -67,5 +68,13 @@ img {
 .break {
     display: block;
     text-align: right;
+}
+
+.banner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
 }
 </style>
